@@ -1,6 +1,7 @@
 import pygame
 import Canvas, InputHandler#, Player, Enemy
-
+import Enemy
+import Waves
 class Game:
     def __init__(self):
         pygame.init()
@@ -18,8 +19,12 @@ class Game:
 
         self.running = True
 
+        wave = Waves.Waves()
+
     def update(self):
-        x = 5
+        if wave.wave_over:
+            wave.spawn_enemies
+            wave.increase_wave_num
 
     def render(self):
         self.game_canvas.render()
