@@ -23,8 +23,6 @@ class Enemy:
             self._x -=5
         elif self._x <= 10:
             self._x +=5
-_
-
 
     def is_collided_with(self, sprite):
         self._show_enemy = False
@@ -35,8 +33,3 @@ _
             return 0
         else:
             return 800
-
-
-
-
-

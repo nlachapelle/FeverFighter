@@ -16,7 +16,7 @@ class Waves:
 
     def spawn_enemies(self):
         num = ((wave_num*1.5) +1)%1
-        for i in range(num)
+        for i in range(num):
             x= random.randint(1,0)
             if x == 1:
                 x=800
